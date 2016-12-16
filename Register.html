@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+label{
+display:inline-block;
+width: 90px;
+
+padding-right:none;
+padding-left:none;
+font-weight: bold;
+
+margin:auto;
+}
+   
+	div.container {
+width: 900px;
+    height: 220px;
+    padding: 30px 50px;
+    background: #dddddd;
+    border-radius: 20px;
+	margin:0 auto;
+	 background:url(http://www.westforthospitalgroup.com/images/banner-of-hospital.jpg);
+  
+}
+.target {
+    width:900px;
+    height:400px;
+   
+border: 2px solid #a1a1a1;
+    padding: 30px 50px;
+    background: #dddddd;
+    
+    border-radius: 20px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.target > div {
+    display:none;
+}
+
+.target > div:target{
+    display:block;
+}
+body{
+	background:url(http://www.brookeglenhospital.com/wp-content/uploads/2015/06/o-HOSPITAL-HALLWAY-facebook.jpg);
+}
+</style>
+
+
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<div class="container">
+
+</div>
+<div class="target" >
+<h3 align="center">Choose Login Option</h3>
+<form action="Register.jsp" method="POST">
+ <fieldset id="field" style="margin:auto; width:400px">
+
+ <label> Doctor </label><input type="radio" name="tab" value="doctor">
+ <label> Patient</label><input type="radio" name="tab" value="patient"><br><br>
+  
+<label>User Name : </label><input type="text"  id="username" name="username" required/><br><br>
+<label>Full Name  : </label><input type="text"  id="fullname" name="fullname" required/><br><br>
+<label>Email :     </label> <input type="Email"   id="email" name="email" required/><br><br>
+<label>Mobile:     </label> <input type="text"  id="number" name="number" required/><br><br>
+<label>Password:    </label><input type="password"  id="pass" name="pass" required/><br><br>
+               <input type="Submit" value="Register"/>
+
+</fieldset>
+</form>
+</div>
+	
+</body>
+</html>

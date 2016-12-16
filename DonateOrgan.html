@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="ISO-8859-1">
+<title>Donate Organ</title>
+</head>
+<body>
+<div class="container">
+
+</div>
+<div class="navbar">
+<ul>
+ <li><a href="Details.jsp">My Details</a></li>
+  <li><a href="SerachOrgan.jsp">Search Organ</a></li>
+    <li><a class="active" href="DonateOrgan.html">Donate Organ</a></li>
+  <li><a href="Appointment.jsp">Book Appointment</a></li>
+  <li><a href="ViewBooking.jsp">View Booking</a></li>
+  <li><a href="CancelBooking.html">Cancel Booking</a></li>
+  <li style="float:right"><a href="main.html">Logout</a></li>
+  </ul>
+</div>
+<div class="target" >
+<h3>Donor Register</h3>
+<form action="DonateOrgan.jsp" method="post">
+<label>Name:</label><input type="text" name="name">
+<label>Blood Group:</label><input type="text" name="bloodgroup"><br><br>
+<label>Mobile:</label><input type="text" name="mobile">
+<label>Email:</label><input type="text" name="email"><br><br>
+<label>Organ:</label><select name="organ">
+  <option value="Eye">Eye</option>
+  <option value="Liver">Liver</option>
+  <option value="Kidney">Kidney</option>
+  <option value="Heart">Heart</option>
+   <option value="Brain">Brain</option>
+  </select><br><br>
+  <button type="button1" style="margin-left:auto;margin-right:auto;display:block;">Donate</button><br>
+</form>
+</div>
+</body>
+</html>

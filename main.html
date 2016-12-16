@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label{
+display:inline-block;
+width: 150px;
+
+padding-right:none;
+padding-left:none;
+font-weight: bold;
+
+margin:auto;
+}
+   
+	div.container {
+width: 900px;
+    height: 220px;
+    padding: 30px 50px;
+    background: #dddddd;
+    border-radius: 20px;
+	margin:0 auto;
+	 background:url(http://www.westforthospitalgroup.com/images/banner-of-hospital.jpg);
+  
+}
+.target {
+    width:900px;
+    height:400px;
+   
+border: 2px solid #a1a1a1;
+    padding: 30px 50px;
+    background: #dddddd;
+    
+    border-radius: 20px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.target > div {
+    display:none;
+}
+
+.target > div:target{
+    display:block;
+}
+body{
+	background:url(http://www.brookeglenhospital.com/wp-content/uploads/2015/06/o-HOSPITAL-HALLWAY-facebook.jpg);
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<div class="container">
+
+</div>
+<div class="target" >
+<h3 align="center">Choose Login Option</h3>
+<form action="Login.jsp" method="POST">
+ <fieldset id="field" style="margin:auto; width:400px">
+  <lable>Doctor</lable><input type="radio" name="table" value="doctor">
+ <lable>Patient</lable><input type="radio" name="table" value="patient"><br><br>
+ <label >User Name :</label> <input type="text" id="username" name="username" required/><br><br>
+<label >Password  :</label> <input type="password" id="pass" name="pass" required/><br><br>
+<input type="Submit" value="Login"/>
+<p>Not a member yet? <a href="Register.html">Register</a></p>
+</fieldset>
+</form>
+</div>
+	
+</body>
+</html>

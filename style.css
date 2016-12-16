@@ -1,0 +1,95 @@
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#dddddd;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #dddddd;
+}
+
+.active {
+    background-color: 	#F0F8FF;
+}
+div.navbar{
+margin-bottom:10px;
+border: 2px solid #a1a1a1;
+    padding: 10px 50px;
+    background: #dddddd;
+    width: 900px;
+    border-radius: 25px;
+	margin:0 auto;
+	margin-top:10px;
+}
+    
+	div.container {
+width: 900px;
+    height: 220px;
+    padding: 30px 50px;
+    background: #dddddd;
+    border-radius: 20px;
+	margin:0 auto;
+	 background:url(http://www.westforthospitalgroup.com/images/banner-of-hospital.jpg);
+  
+}
+.target {
+    width:900px;
+    height:400px;
+   
+border: 2px solid #a1a1a1;
+    padding: 30px 50px;
+    background: #dddddd;
+    
+    border-radius: 20px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.target > div {
+    display:none;
+}
+
+.target > div:target{
+    display:block;
+}
+body{
+	background:url(http://www.brookeglenhospital.com/wp-content/uploads/2015/06/o-HOSPITAL-HALLWAY-facebook.jpg);
+}
+form label{
+
+display: inline-block;
+
+width: 60px;
+
+padding-right:70px;
+padding-left:68px;
+font-weight: bold;
+
+}
+input,label{
+	float:left;
+}
+
